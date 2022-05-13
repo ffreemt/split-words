@@ -2,7 +2,7 @@
 name = "split-words"
 version = "0.1.2"
 description = "Split German words"
-authors = [""]
+authors = ["Refer to CharSplit repo"]
 readme = "README.md"
 repository = "https://github.com/ffreemt/split-words"
 
