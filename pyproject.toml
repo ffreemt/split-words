@@ -1,8 +1,10 @@
 [tool.poetry]
 name = "split-words"
-version = "0.1.1"
+version = "0.1.2"
 description = "Split German words"
-authors = ["freemt <yucongo+fmt@gmail.com>"]
+authors = [""]
+readme = "README.md"
+repository = "https://github.com/ffreemt/split-words"
 
 [tool.poetry.dependencies]
 python = "^3.8.3"
