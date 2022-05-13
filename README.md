@@ -1,4 +1,4 @@
-[![pytest](https://github.com/ffreemt/split-words/actions/workflows/routine-tests.yml/badge.svg)](https://github.com/ffreemt/split-words/actions)[![python](https://img.shields.io/static/v1?label=python+&message=3.8%2B&color=blue)](https://www.python.org/downloads/)[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)[![PyPI version](https://badge.fury.io/py/split_words.svg)](https://badge.fury.io/py/json_de2zh)
+[![pytest](https://github.com/ffreemt/split-words/actions/workflows/routine-tests.yml/badge.svg)](https://github.com/ffreemt/split-words/actions)[![python](https://img.shields.io/static/v1?label=python+&message=3.8%2B&color=blue)](https://www.python.org/downloads/)[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)[![PyPI version](https://badge.fury.io/py/split-words.svg)](https://badge.fury.io/py/split-words)
 
 # split-words
 
