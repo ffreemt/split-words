@@ -7,8 +7,15 @@ from typing import List, Tuple
 
 NGRAM_PATH = Path(__file__).parent / "ngram_probs.json"
 
-with open(NGRAM_PATH) as fha:
-    ngram_probs = json.load(fha)  # 11.6 s
+ngram_probs: Dict  = None
+def get_ngram_probs() -> Dict:
+    global ngram_probs
+    if ngram_probs is not None:
+        return ngram_probs
+    
+    with open(NGRAM_PATH) as f:
+        ngram_probs = json.load(f)
+    return ngram_probs
 
 # NGRAM_PATH = Path(__file__).parent / "ngram_probs.lzma"
 # ngram_probs = joblib.load(NGRAM_PATH)  #  1min 3s
@@ -25,6 +32,8 @@ class Splitter:
         :return: List of all splits
         """
         word = word.lower()
+        ngram_probs = get_ngram_probs()
+
 
         # If there is a hyphen in the word, return part of the word behind the last hyphen
         if "-" in word:
