@@ -2,7 +2,7 @@
 
 # split-words
 
-`CharSplit` repacked with `poetry`, published as `pypi` `split-words`--
+[`CharSplit`](https://github.com/dtuggener/CharSplit) repacked with `poetry`, published as `pypi` `split-words`--
 all credit goes to the original author.
 ```
 pip install split-words
@@ -14,6 +14,7 @@ from split_words import Splitter
 ```
 
 ## CharSplit - An *ngram*-based compound splitter for German
+[url](https://github.com/dtuggener/CharSplit)
 
 Splits a German compound into its body and head, e.g.
 > Autobahnraststätte -> Autobahn - Raststätte
