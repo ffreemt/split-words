@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 """
-Estimate compound word boundaries based ngram probabilities of n characters at word endings
+Estimate compound word boundaries based ngram probabilities of n characters at word endings.
+
 Take as input a file with one word (a noun) per line
 """
 
@@ -22,7 +23,8 @@ def main(
     input_file: str, output_file: str, max_words: int = 10000000, max_len: int = 20
 ) -> None:
     """
-    Calculate ngram probabilities at different positions
+    Calculate ngram probabilities at different positions.
+
     :param input_file: List of words, one per line
     :param output_file: JSON file where ngram probabilities are stored
     :param max_words: Max. no. of words to analyse

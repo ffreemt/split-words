@@ -3,7 +3,7 @@ import json
 import re
 import sys
 from pathlib import Path
-from typing import List, Tuple
+from typing import Dict, List, Tuple
 
 NGRAM_PATH = Path(__file__).parent / "ngram_probs.json"
 
@@ -12,7 +12,7 @@ def get_ngram_probs() -> Dict:
     global ngram_probs
     if ngram_probs is not None:
         return ngram_probs
-    
+
     with open(NGRAM_PATH) as f:
         ngram_probs = json.load(f)
     return ngram_probs
@@ -22,12 +22,12 @@ def get_ngram_probs() -> Dict:
 
 
 class Splitter:
-    """
-    Wrapper around the split_compound function
-    """
+    """Wrapper around the split_compound function."""
 
     def split_compound(self, word: str) -> List[Tuple[float, str, str]]:
-        """Return list of possible splits, best first.
+        """
+        Return list of possible splits, best first.
+
         :param word: Word to be split
         :return: List of all splits
         """
@@ -128,10 +128,7 @@ class Splitter:
         germanet_file: str = "split_compounds_from_GermaNet13.0.txt",
         print_errors: bool = False,
     ) -> None:
-        """
-        Test on GermaNet compounds
-        from http://www.sfs.uni-tuebingen.de/lsd/compounds.shtml
-        """
+        """Test on GermaNet compounds from http://www.sfs.uni-tuebingen.de/lsd/compounds.shtml."""
         cases, correct = 0, 0
 
         for line in open(germanet_file, "r").readlines()[2:]:
